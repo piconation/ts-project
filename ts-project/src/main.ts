@@ -22,7 +22,7 @@ class PokemonTrainer {
     pokemon: Array<Pokemon>;
     gymBadges: string[];
     
-    startFight(pokemon: Pokemon, attackName: string): string {
+    attack(pokemon: Pokemon, attackName: string): string {
         return pokemon.attack(attackName);
     }
     
@@ -42,7 +42,7 @@ class Pokemon {
     }
 
     set attacks(attacks: Array<string>) {
-            this.attacks = attacks;
+        this.attacks = attacks;
     }
     
     attack(attackName: string): string {
